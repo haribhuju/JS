@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lottery Draw System</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #f4f4f9;
+      }
+      .lottery-container {
+        text-align: center;
+      }
+      .lottery-result,
+      .guess-set {
+        margin-top: 20px;
+      }
+      .guess-set {
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        display: inline-block;
+      }
+      .jackpot-result {
+        font-weight: bold;
+        color: green;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lottery-container">
+      <h1>Lottery Draw System</h1>
+      <button id="generateLottery">Generate Lottery</button>
+      <button id="clearSession">Clear Session</button>
+
+      <div id="lotteryResult"></div>
+      <div id="comparisonResults"></div>
+      <div id="prizeCountDisplay"></div>
+      <div id="winningDrawsDisplay"></div>
+      <div id="analysisResults"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
