@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WORKING - Interactive Color Palette</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Interactive Color Palette</h1>
+
+    <div class="color-controls">
+      <div class="color-slider">
+        <label for="red">Red</label>
+        <input type="range" id="red" min="0" max="255" value="50" />
+        <span id="redValue">50</span>
+      </div>
+      <div class="color-slider">
+        <label for="green">Green</label>
+        <input type="range" id="green" min="0" max="255" value="100" />
+        <span id="greenValue">100</span>
+      </div>
+      <div class="color-slider">
+        <label for="blue">Blue</label>
+        <input type="range" id="blue" min="0" max="255" value="150" />
+        <span id="blueValue">150</span>
+      </div>
+    </div>
+
+    <div id="colorPreview" class="preview-box">
+      <div class="color-value" id="hexValue">#000000</div>
+    </div>
+
+    <div id="saveControl">
+      <input
+        type="text"
+        name="paletteName"
+        id="paletteName"
+        placeholder="Name your palette"
+      />
+      <button id="saveButton">Save This Color</button>
+    </div>
+
+    <h2>Your Save Color Palette</h2>
+
+    <div id="savedPalettes" class="saved-palettes">
+      <p class="empty-message">
+        NO palettes saved yet. Use the sliders to create and save colors
+      </p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

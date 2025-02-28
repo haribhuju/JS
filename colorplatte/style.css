@@ -1,0 +1,102 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.color-controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.color-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.color-slider label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.preview-box {
+  width: 200px;
+  height: 200px;
+
+  border: 3px solid #333;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  color: black;
+
+  margin: 20px auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.color-value {
+  margin-top: 5px;
+  font-family: monospace;
+  background-color: white;
+  padding: 5px;
+  border-radius: 3px;
+  border: 2px solid #554a4a;
+}
+
+#saveControl {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#paletteName {
+  padding: 8px;
+  margin-right: 10px;
+  width: 200px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+h2 {
+  text-align: center;
+}
+
+.saved-palettes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+  border: 1px solid red;
+}
+
+.empty-message {
+  text-align: center;
+  color: #777;
+  margin-top: 20px;
+}
